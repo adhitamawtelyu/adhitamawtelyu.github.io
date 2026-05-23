@@ -5,16 +5,16 @@
   --bg-card: rgba(255, 255, 255, 0.85);
   --bg-card-hover: rgba(255, 255, 255, 0.98);
   --border: rgba(148, 163, 184, 0.12);
-  --border-hover: rgba(79, 70, 229, 0.2);
+  --border-hover: rgba(16, 124, 65, 0.2);
 
   --text: #0F172A;
   --text-secondary: #334155;
   --text-muted: #64748B;
 
-  --primary: #4F46E5;
-  --primary-glow: rgba(79, 70, 229, 0.08);
-  --secondary: #2563EB;
-  --accent: #0EA5E9;
+  --primary: #107C41;
+  --primary-glow: rgba(16, 124, 65, 0.1);
+  --secondary: #21A366;
+  --accent: #00B050;
 
   --font-display: 'Outfit', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
@@ -136,7 +136,7 @@ nav {
 }
 
 .nav-cta:hover {
-  background: #4338ca !important;
+  background: #0D6B3A !important;
   color: #fff !important;
 }
 
@@ -216,7 +216,7 @@ section {
   align-items: center;
   gap: 0.5rem;
   background: var(--primary-glow);
-  border: 1px solid rgba(79, 70, 229, 0.15);
+  border: 1px solid rgba(16, 124, 65, 0.15);
   padding: 0.4rem 1rem;
   border-radius: 50px;
   font-size: 0.8rem;
@@ -328,7 +328,7 @@ section {
 .hero-image-card:hover {
   transform: translateY(-5px);
   border-color: var(--border-hover);
-  box-shadow: 0 30px 60px -20px rgba(79, 70, 229, 0.15);
+  box-shadow: 0 30px 60px -20px rgba(16, 124, 65, 0.15);
 }
 
 .hero-profile-img {
@@ -341,7 +341,7 @@ section {
 .hero-image-glow {
   position: absolute;
   inset: -10%;
-  background: radial-gradient(circle, rgba(79, 70, 229, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(16, 124, 65, 0.15) 0%, transparent 70%);
   opacity: 0.5;
   pointer-events: none;
   z-index: 1;
@@ -370,9 +370,9 @@ section {
 }
 
 .btn-primary:hover {
-  background: #4338ca;
+  background: #0D6B3A;
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(79, 70, 229, 0.25);
+  box-shadow: 0 4px 20px rgba(16, 124, 65, 0.25);
 }
 
 .btn-outline {
@@ -530,12 +530,12 @@ section {
   border-color: var(--border-hover);
   background: var(--bg-card-hover);
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px -4px rgba(79, 70, 229, 0.08);
+  box-shadow: 0 12px 30px -4px rgba(16, 124, 65, 0.08);
 }
 
 .project-card-image {
   aspect-ratio: 16/10;
-  background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(37, 99, 235, 0.06));
+  background: linear-gradient(135deg, rgba(16, 124, 65, 0.1), rgba(33, 163, 102, 0.06));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -612,7 +612,7 @@ section {
   background: var(--primary-glow);
   padding: 0.2rem 0.6rem;
   border-radius: 50px;
-  border: 1px solid rgba(79, 70, 229, 0.1);
+  border: 1px solid rgba(16, 124, 65, 0.1);
   white-space: nowrap;
 }
 
@@ -685,7 +685,7 @@ section {
   border-color: var(--border-hover);
   background: var(--bg-card-hover);
   transform: translateY(-4px);
-  box-shadow: 0 12px 30px -4px rgba(79, 70, 229, 0.06);
+  box-shadow: 0 12px 30px -4px rgba(16, 124, 65, 0.06);
 }
 
 .education-flex {
@@ -706,7 +706,7 @@ section {
   font-size: 1.8rem;
   color: var(--primary);
   flex-shrink: 0;
-  border: 1px solid rgba(79, 70, 229, 0.1);
+  border: 1px solid rgba(16, 124, 65, 0.1);
   transition: var(--transition);
 }
 
@@ -745,7 +745,7 @@ section {
 }
 
 .education-gpa {
-  background: rgba(37, 99, 235, 0.08);
+  background: rgba(33, 163, 102, 0.08);
   color: var(--secondary);
   font-weight: 600;
   font-size: 0.8rem;
