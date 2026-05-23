@@ -23,9 +23,9 @@ function initThree() {
   const colors = new Float32Array(count * 3);
   const sizes = new Float32Array(count);
 
-  const color1 = new THREE.Color('#8B1A1A');
-  const color2 = new THREE.Color('#C4A265');
-  const color3 = new THREE.Color('#D4A574');
+  const color1 = new THREE.Color('#059669');
+  const color2 = new THREE.Color('#D97706');
+  const color3 = new THREE.Color('#0f766e');
 
   for (let i = 0; i < count; i++) {
     const i3 = i * 3;
@@ -62,8 +62,8 @@ function initThree() {
     size: 0.12,
     vertexColors: true,
     transparent: true,
-    opacity: 0.5,
-    blending: THREE.AdditiveBlending,
+    opacity: 0.45,
+    blending: THREE.NormalBlending,
     sizeAttenuation: true,
   });
 
@@ -86,10 +86,10 @@ function initThree() {
   ringGeo.setAttribute('position', new THREE.BufferAttribute(ringPos, 3));
   const ringMat = new THREE.PointsMaterial({
     size: 0.06,
-    color: 0x8B1A1A,
+    color: 0x059669,
     transparent: true,
-    opacity: 0.15,
-    blending: THREE.AdditiveBlending,
+    opacity: 0.25,
+    blending: THREE.NormalBlending,
     sizeAttenuation: true,
   });
   const ring = new THREE.Points(ringGeo, ringMat);
@@ -157,10 +157,10 @@ function initNavScroll() {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > 100) {
-      nav.style.background = 'rgba(250, 248, 246, 0.92)';
+      nav.style.background = 'rgba(249, 250, 251, 0.92)';
       nav.style.borderBottom = '1px solid var(--border)';
     } else {
-      nav.style.background = 'rgba(250, 248, 246, 0.85)';
+      nav.style.background = 'rgba(249, 250, 251, 0.85)';
       nav.style.borderBottom = '1px solid var(--border)';
     }
 
