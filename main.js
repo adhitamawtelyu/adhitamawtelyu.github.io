@@ -62,7 +62,7 @@ function initThree() {
     size: 0.12,
     vertexColors: true,
     transparent: true,
-    opacity: 0.8,
+    opacity: 0.5,
     blending: THREE.AdditiveBlending,
     sizeAttenuation: true,
   });
@@ -88,7 +88,7 @@ function initThree() {
     size: 0.06,
     color: 0x8B1A1A,
     transparent: true,
-    opacity: 0.3,
+    opacity: 0.15,
     blending: THREE.AdditiveBlending,
     sizeAttenuation: true,
   });
@@ -157,11 +157,11 @@ function initNavScroll() {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > 100) {
-      nav.style.background = 'rgba(7, 6, 15, 0.85)';
-      nav.style.borderBottom = '1px solid rgba(255,255,255,0.06)';
+      nav.style.background = 'rgba(250, 248, 246, 0.92)';
+      nav.style.borderBottom = '1px solid var(--border)';
     } else {
-      nav.style.background = 'rgba(7, 6, 15, 0.7)';
-      nav.style.borderBottom = '1px solid rgba(255,255,255,0.06)';
+      nav.style.background = 'rgba(250, 248, 246, 0.85)';
+      nav.style.borderBottom = '1px solid var(--border)';
     }
 
     lastScroll = currentScroll;
