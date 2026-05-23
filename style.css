@@ -347,57 +347,7 @@ section {
   z-index: 1;
 }
 
-.floating-badge {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--border);
-  padding: 0.75rem 1.2rem;
-  border-radius: 50px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-  z-index: 3;
-  transition: var(--transition);
-}
-
-.floating-badge:hover {
-  background: rgba(255, 255, 255, 0.95);
-  transform: scale(1.05);
-  border-color: var(--primary);
-}
-
-.badge-icon {
-  font-size: 1.1rem;
-}
-
-.badge-text {
-  font-family: var(--font-display);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text);
-  white-space: nowrap;
-}
-
-.badge-1 {
-  top: 15%;
-  left: -20px;
-  animation: float 4s ease-in-out infinite;
-}
-
-.badge-2 {
-  bottom: 15%;
-  right: -20px;
-  animation: float 4s ease-in-out infinite 2s;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
+/* ========== BUTTONS ========== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -1153,14 +1103,6 @@ footer {
   .hero-image-wrapper {
     max-width: 280px;
     margin-top: 1rem;
-  }
-
-  .badge-1 {
-    left: -10px;
-  }
-
-  .badge-2 {
-    right: -10px;
   }
 
   .about-grid {
