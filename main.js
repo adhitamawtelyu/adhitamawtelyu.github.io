@@ -23,9 +23,9 @@ function initThree() {
   const colors = new Float32Array(count * 3);
   const sizes = new Float32Array(count);
 
-  const color1 = new THREE.Color('#7c5cfc');
-  const color2 = new THREE.Color('#2dd4bf');
-  const color3 = new THREE.Color('#f472b6');
+  const color1 = new THREE.Color('#8B1A1A');
+  const color2 = new THREE.Color('#C4A265');
+  const color3 = new THREE.Color('#D4A574');
 
   for (let i = 0; i < count; i++) {
     const i3 = i * 3;
@@ -86,7 +86,7 @@ function initThree() {
   ringGeo.setAttribute('position', new THREE.BufferAttribute(ringPos, 3));
   const ringMat = new THREE.PointsMaterial({
     size: 0.06,
-    color: 0x7c5cfc,
+    color: 0x8B1A1A,
     transparent: true,
     opacity: 0.3,
     blending: THREE.AdditiveBlending,
