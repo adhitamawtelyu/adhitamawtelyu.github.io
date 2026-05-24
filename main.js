@@ -1,10 +1,6 @@
-// ========== SCROLL REVEAL ANIMATIONS ==========
+// ========== SCROLL REVEAL ==========
 function initScrollReveal() {
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px',
-  };
-
+  const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -13,47 +9,26 @@ function initScrollReveal() {
       }
     });
   }, observerOptions);
-
-  document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach((el) => {
-    observer.observe(el);
-  });
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach((el) => observer.observe(el));
 }
 
-// ========== SMOOTH NAV SCROLL ==========
+// ========== NAV SCROLL ==========
 function initNavScroll() {
-  let lastScroll = 0;
   const nav = document.querySelector('nav');
-
   window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-
-    if (currentScroll > 100) {
-      nav.style.background = 'rgba(255, 255, 255, 0.45)';
-      nav.style.boxShadow = '0 12px 30px -10px rgba(122, 28, 44, 0.05)';
-    } else {
-      nav.style.background = 'rgba(255, 255, 255, 0.28)';
-      nav.style.boxShadow = 'none';
-    }
-
-    lastScroll = currentScroll;
+    nav.style.boxShadow = window.pageYOffset > 80 ? '0 1px 4px rgba(0,0,0,0.04)' : 'none';
   });
 }
 
-// ========== NAV HAMBURGER ==========
+// ========== MOBILE MENU ==========
 function initMobileMenu() {
   const toggle = document.querySelector('.menu-toggle');
   const links = document.querySelector('.nav-links');
-
   if (!toggle || !links) return;
-
   toggle.addEventListener('click', () => {
     links.classList.toggle('active');
-    toggle.innerHTML = links.classList.contains('active')
-      ? '<i class="fas fa-times"></i>'
-      : '<i class="fas fa-bars"></i>';
+    toggle.innerHTML = links.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
   });
-
-  // Close on link click
   links.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
       links.classList.remove('active');
@@ -64,23 +39,49 @@ function initMobileMenu() {
 
 // ========== ACTIVE NAV LINK ==========
 function initActiveNav() {
-  const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
-
-  if (!sections.length || !navLinks.length) return;
-
-  window.addEventListener('scroll', () => {
+  const setActive = () => {
+    const sections = document.querySelectorAll('section[id]');
     let current = '';
     sections.forEach((section) => {
-      const top = section.offsetTop - 150;
-      if (window.scrollY >= top) {
-        current = section.getAttribute('id');
-      }
+      if (window.scrollY >= section.offsetTop - 180) current = section.getAttribute('id');
     });
-
     navLinks.forEach((link) => {
-      link.style.color = link.getAttribute('href') === `#${current}`
-        ? 'var(--text)' : 'var(--text-secondary)';
+      link.style.color = link.getAttribute('href') === `#${current}` ? 'var(--text)' : 'var(--text-secondary)';
+    });
+  };
+  window.addEventListener('scroll', setActive);
+  setActive();
+}
+
+// ========== GRID / SPREADSHEET VIEW TOGGLE ==========
+function initViewToggle() {
+  const btnGrid = document.getElementById('btn-grid-view');
+  const btnTable = document.getElementById('btn-table-view');
+  const gridView = document.getElementById('projects-visual-grid');
+  const tableView = document.getElementById('projects-table-view');
+  const notableSection = document.getElementById('notable-projects-visual-section');
+  if (!btnGrid || !btnTable || !gridView || !tableView) return;
+  btnGrid.addEventListener('click', () => {
+    btnGrid.classList.add('active'); btnTable.classList.remove('active');
+    gridView.style.display = 'grid'; tableView.style.display = 'none';
+    if (notableSection) notableSection.style.display = 'block';
+  });
+  btnTable.addEventListener('click', () => {
+    btnTable.classList.add('active'); btnGrid.classList.remove('active');
+    gridView.style.display = 'none'; tableView.style.display = 'block';
+    if (notableSection) notableSection.style.display = 'none';
+  });
+}
+
+// ========== SVG NODE HOVER ==========
+function initSvgNodes() {
+  document.querySelectorAll('.svg-node').forEach((node) => {
+    node.addEventListener('mouseenter', function() {
+      this.querySelectorAll('rect').forEach(r => r.setAttribute('filter', 'brightness(1.05)'));
+    });
+    node.addEventListener('mouseleave', function() {
+      this.querySelectorAll('rect').forEach(r => r.removeAttribute('filter'));
     });
   });
 }
@@ -91,4 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavScroll();
   initMobileMenu();
   initActiveNav();
+  initViewToggle();
+  initSvgNodes();
 });
