@@ -6,6 +6,11 @@
   <title>Adhitama Wichaksono | Data Analyst</title>
   <meta name="description" content="Data Analyst & Backend Developer - Passionate about Data Engineering, Machine Learning, and Web Development" />
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -13,9 +18,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <div class="bg-orb orb-maroon"></div>
-  <div class="bg-orb orb-gold"></div>
 
   <!-- ========== NAV ========== -->
   <nav>
@@ -62,9 +64,50 @@
       </div>
 
       <div class="hero-image-wrapper reveal-scale">
-        <div class="hero-image-card">
-          <img src="profile.jpg" alt="Adhitama Wichaksono" class="hero-profile-img" />
+        <div class="data-profile-card">
+          <div class="data-card-header">
+            <span class="data-card-dot"></span>
+            <span class="data-card-id">SYS_PROFILE_01</span>
+          </div>
+          <div class="data-card-img-container">
+            <img src="profile.jpg" alt="Adhitama Wichaksono" class="hero-profile-img" />
+          </div>
+          <div class="data-card-details">
+            <div class="data-detail-row">
+              <span class="detail-label">LOCATION:</span>
+              <span class="detail-value">Jakarta, ID</span>
+            </div>
+            <div class="data-detail-row">
+              <span class="detail-label">ROLES:</span>
+              <span class="detail-value">Data &amp; Backend</span>
+            </div>
+            <div class="data-detail-row">
+              <span class="detail-label">EDUCATION:</span>
+              <span class="detail-value">Telkom Univ</span>
+            </div>
+            <div class="data-detail-row">
+              <span class="detail-label">GPA:</span>
+              <span class="detail-value">3.34/4.00</span>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="hero-metrics-bar reveal">
+      <div class="metric-item">
+        <span class="metric-num">99.09%</span>
+        <span class="metric-label">Research ML Accuracy</span>
+      </div>
+      <div class="metric-divider"></div>
+      <div class="metric-item">
+        <span class="metric-num">45s &rarr; 10s</span>
+        <span class="metric-label">TAM Dashboard Speedup</span>
+      </div>
+      <div class="metric-divider"></div>
+      <div class="metric-item">
+        <span class="metric-num">3+ Years</span>
+        <span class="metric-label">Tech Exploration</span>
       </div>
     </div>
 
@@ -84,7 +127,49 @@
     <div class="about-grid">
       <div class="about-image reveal-left">
         <div class="about-image-frame">
-          <img src="profile.jpg" alt="Adhitama Wichaksono" style="width:100%;height:100%;object-fit:cover;object-position:top;position:relative;z-index:1;" />
+          <svg viewBox="0 0 360 360" class="skill-pipeline-svg" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="var(--border)" stroke-width="0.5"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" rx="12" />
+            <path d="M 60 70 L 180 70 L 180 140" fill="none" stroke="var(--primary)" stroke-width="2" stroke-dasharray="4 4" />
+            <path d="M 300 70 L 180 70" fill="none" stroke="var(--primary)" stroke-width="2" stroke-dasharray="4 4" />
+            <path d="M 180 190 L 180 260" fill="none" stroke="var(--secondary)" stroke-width="2" />
+            <path d="M 180 260 L 70 260 L 70 310" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="3 3" />
+            <path d="M 180 260 L 290 260 L 290 310" fill="none" stroke="var(--primary)" stroke-width="2" />
+            <g class="svg-node">
+              <rect x="20" y="45" width="80" height="46" rx="6" fill="var(--bg-card)" stroke="var(--border)" stroke-width="1.5" />
+              <text x="60" y="68" text-anchor="middle" font-family="var(--font-mono)" font-size="10" font-weight="bold" fill="var(--text)">SQL / APIs</text>
+              <text x="60" y="80" text-anchor="middle" font-family="var(--font-body)" font-size="8" fill="var(--text-secondary)">Data Sources</text>
+            </g>
+            <g class="svg-node">
+              <rect x="260" y="45" width="80" height="46" rx="6" fill="var(--bg-card)" stroke="var(--border)" stroke-width="1.5" />
+              <text x="300" y="68" text-anchor="middle" font-family="var(--font-mono)" font-size="10" font-weight="bold" fill="var(--text)">Excel / CSV</text>
+              <text x="300" y="80" text-anchor="middle" font-family="var(--font-body)" font-size="8" fill="var(--text-secondary)">Raw Files</text>
+            </g>
+            <g class="svg-node">
+              <rect x="130" y="140" width="100" height="50" rx="6" fill="var(--bg-card)" stroke="var(--primary)" stroke-width="2" />
+              <text x="180" y="163" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="bold" fill="var(--primary)">Python / EDA</text>
+              <text x="180" y="176" text-anchor="middle" font-family="var(--font-body)" font-size="9" fill="var(--text-secondary)">ETL &amp; Analysis</text>
+            </g>
+            <g class="svg-node">
+              <rect x="130" y="240" width="100" height="46" rx="6" fill="var(--bg-card)" stroke="var(--secondary)" stroke-width="2" />
+              <text x="180" y="263" text-anchor="middle" font-family="var(--font-mono)" font-size="10" font-weight="bold" fill="var(--secondary)">Postgres/MySQL</text>
+              <text x="180" y="275" text-anchor="middle" font-family="var(--font-body)" font-size="8" fill="var(--text-secondary)">Relational DB</text>
+            </g>
+            <g class="svg-node">
+              <rect x="20" y="295" width="100" height="46" rx="6" fill="var(--bg-card)" stroke="var(--accent)" stroke-width="1.5" />
+              <text x="70" y="318" text-anchor="middle" font-family="var(--font-mono)" font-size="10" font-weight="bold" fill="var(--accent)">Power BI</text>
+              <text x="70" y="330" text-anchor="middle" font-family="var(--font-body)" font-size="8" fill="var(--text-secondary)">Visualization</text>
+            </g>
+            <g class="svg-node">
+              <rect x="240" y="295" width="100" height="46" rx="6" fill="var(--bg-card)" stroke="var(--primary)" stroke-width="1.5" />
+              <text x="290" y="318" text-anchor="middle" font-family="var(--font-mono)" font-size="10" font-weight="bold" fill="var(--primary)">Golang/Laravel</text>
+              <text x="290" y="330" text-anchor="middle" font-family="var(--font-body)" font-size="8" fill="var(--text-secondary)">RESTful APIs</text>
+            </g>
+          </svg>
         </div>
       </div>
 
@@ -118,17 +203,26 @@
 
   <!-- ========== PROJECTS ========== -->
   <section id="projects">
-    <div class="reveal">
-      <p class="section-tag">Portfolio</p>
-      <h2 class="section-title">Featured projects</h2>
-      <p class="section-sub">A selection of projects from internships, research, and independent work.</p>
+    <div class="reveal projects-header-flex">
+      <div>
+        <p class="section-tag">Portfolio</p>
+        <h2 class="section-title">Featured projects</h2>
+        <p class="section-sub">A selection of projects from internships, research, and independent work.</p>
+      </div>
+      <div class="view-toggle-container">
+        <button id="btn-grid-view" class="toggle-btn active" aria-label="Visual Grid View">
+          <i class="fas fa-th-large"></i> Grid View
+        </button>
+        <button id="btn-table-view" class="toggle-btn" aria-label="Data Table View">
+          <i class="fas fa-table"></i> Spreadsheet View
+        </button>
+      </div>
     </div>
 
-    <div class="projects-grid">
-      <!-- Project 1 -->
+    <div id="projects-visual-grid" class="projects-grid">
       <div class="project-card reveal-scale">
-        <div class="project-card-image" style="background: none;">
-          <img src="assets/fleet-thumb.jpg" alt="Fleet Sales Dashboard" style="width:100%;height:100%;object-fit:cover;object-position:top;" />
+        <div class="project-card-image">
+          <img src="assets/fleet-thumb.jpg" alt="Fleet Sales Dashboard" />
         </div>
         <div class="project-card-body">
           <div class="project-card-tags">
@@ -139,15 +233,14 @@
           <h3 class="project-card-title">Fleet Sales Dashboard</h3>
           <p class="project-card-desc">Comprehensive Power BI dashboard for Toyota Fleet sales — target achievement, period-over-period comparisons, and analysis by customer segment and vehicle model.</p>
           <div class="project-card-links">
-            <a href="assets/Adhitama%20-%20Portofolio_Project_Power_BI_Fleet_Sales_Dashboard%20copy.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+            <a href="assets/Adhitama%20-%20Portofolio_Project_Power_BI_Fleet_Sales_Dashboard%20copy.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF Report</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 2 -->
       <div class="project-card reveal-scale" style="transition-delay: 0.1s">
-        <div class="project-card-image" style="background: none;">
-          <img src="assets/car-thumb.jpg" alt="Car Sales Dashboard" style="width:100%;height:100%;object-fit:cover;object-position:top;" />
+        <div class="project-card-image">
+          <img src="assets/car-thumb.jpg" alt="Car Sales Dashboard" />
         </div>
         <div class="project-card-body">
           <div class="project-card-tags">
@@ -158,15 +251,14 @@
           <h3 class="project-card-title">Car Sales Performance Dashboard</h3>
           <p class="project-card-desc">Interactive dashboard tracking sales, revenue, and customer metrics with dynamic filters and drill-down capabilities across regions and time periods.</p>
           <div class="project-card-links">
-            <a href="assets/Data%20Analyst%20Car%20Sales%20Portofolio_compressed.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+            <a href="assets/Data%20Analyst%20Car%20Sales%20Portofolio_compressed.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF Report</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 3 -->
       <div class="project-card reveal-scale" style="transition-delay: 0.2s">
-        <div class="project-card-image" style="background: none;">
-          <img src="assets/bakery-thumb.jpg" alt="Bakery Sales Analysis" style="width:100%;height:100%;object-fit:cover;object-position:top;" />
+        <div class="project-card-image">
+          <img src="assets/bakery-thumb.jpg" alt="Bakery Sales Analysis" />
         </div>
         <div class="project-card-body">
           <div class="project-card-tags">
@@ -176,15 +268,14 @@
           <h3 class="project-card-title">Bakery Sales Data Analysis</h3>
           <p class="project-card-desc">Analyzed bakery transaction data to identify peak sales periods and best-selling products. Provided data-driven recommendations for inventory and production optimization.</p>
           <div class="project-card-links">
-            <a href="assets/Adhitama%20Wichaksono_Analisis%20Tren%20Penjualan%20Bakery.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+            <a href="assets/Adhitama%20Wichaksono_Analisis%20Tren%20Penjualan%20Bakery.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF Analysis</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 4 -->
       <div class="project-card reveal-scale" style="transition-delay: 0.3s">
-        <div class="project-card-image" style="background: none;">
-          <img src="assets/conf-thumb.jpg" alt="Network Anomaly Detection" style="width:100%;height:100%;object-fit:cover;object-position:top;" />
+        <div class="project-card-image">
+          <img src="assets/conf-thumb.jpg" alt="Network Anomaly Detection" />
         </div>
         <div class="project-card-body">
           <div class="project-card-tags">
@@ -195,7 +286,7 @@
           <h3 class="project-card-title">Network Anomaly Detection</h3>
           <p class="project-card-desc">IEEE-published research using Q-Learning and Deep Q-Learning for intrusion detection. Achieved 99.09% accuracy with DQN on UNSW-NB15 dataset using SMOTE-Tomek balancing.</p>
           <div class="project-card-links">
-            <a href="https://ieeexplore.ieee.org/document/11279087" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE</a>
+            <a href="https://ieeexplore.ieee.org/document/11279087" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Paper</a>
             <a href="assets/Conference%20Adhit%20icsecs%202025%20(4)_compressed.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
             <a href="https://github.com/adhitamaw/Anomaly-Detection-using-Reinforcement-Learning" target="_blank"><i class="fab fa-github"></i> GitHub</a>
           </div>
@@ -203,66 +294,130 @@
       </div>
     </div>
 
-    <!-- Notable Projects Section -->
-    <div class="reveal notable-projects-header">
-      <h3 class="notable-projects-title">Notable projects</h3>
-      <p class="notable-projects-subtitle">Other independent work, utility apps, and academic contributions.</p>
+    <div id="projects-table-view" class="projects-table-container" style="display: none;">
+      <table class="projects-data-table">
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Type</th>
+            <th>Tech Stack</th>
+            <th>Impact Metric / Description</th>
+            <th>Action Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="project-name-cell">Fleet Sales Dashboard</td>
+            <td><span class="badge badge-analyst">Data Analyst</span></td>
+            <td class="tech-stack-cell">Power BI, Toyota</td>
+            <td class="metric-cell">Target achievement analysis dashboard at TAM</td>
+            <td><a href="assets/Adhitama%20-%20Portofolio_Project_Power_BI_Fleet_Sales_Dashboard%20copy.pdf" class="table-link" target="_blank"><i class="fas fa-file-pdf"></i> PDF Report</a></td>
+          </tr>
+          <tr>
+            <td class="project-name-cell">Car Sales Performance Dashboard</td>
+            <td><span class="badge badge-analyst">Data Analyst</span></td>
+            <td class="tech-stack-cell">Power BI, Python, Excel</td>
+            <td class="metric-cell">Drill-down tracking across regions &amp; periods</td>
+            <td><a href="assets/Data%20Analyst%20Car%20Sales%20Portofolio_compressed.pdf" class="table-link" target="_blank"><i class="fas fa-file-pdf"></i> PDF Report</a></td>
+          </tr>
+          <tr>
+            <td class="project-name-cell">Bakery Sales Data Analysis</td>
+            <td><span class="badge badge-analyst">Data Analyst</span></td>
+            <td class="tech-stack-cell">Excel, Data Analysis</td>
+            <td class="metric-cell">Inventory &amp; production optimization recommendations</td>
+            <td><a href="assets/Adhitama%20Wichaksono_Analisis%20Tren%20Penjualan%20Bakery.pdf" class="table-link" target="_blank"><i class="fas fa-file-pdf"></i> PDF Analysis</a></td>
+          </tr>
+          <tr>
+            <td class="project-name-cell">Network Anomaly Detection</td>
+            <td><span class="badge badge-backend">Backend / ML</span></td>
+            <td class="tech-stack-cell">Python, DQN ML, IEEE</td>
+            <td class="metric-cell">99.09% DQN intrusion detection accuracy (IEEE)</td>
+            <td>
+              <a href="https://ieeexplore.ieee.org/document/11279087" class="table-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE</a>
+              <a href="assets/Conference%20Adhit%20icsecs%202025%20(4)_compressed.pdf" class="table-link" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+              <a href="https://github.com/adhitamaw/Anomaly-Detection-using-Reinforcement-Learning" class="table-link" target="_blank"><i class="fab fa-github"></i> Git</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="project-name-cell">SPPD Mobile</td>
+            <td><span class="badge badge-backend">Backend</span></td>
+            <td class="tech-stack-cell">Flutter, PHP, MySQL</td>
+            <td class="metric-cell">RESTful API backend for trip admin (BP Batam)</td>
+            <td><a href="https://github.com/adhitamaw/sppd" class="table-link" target="_blank"><i class="fab fa-github"></i> Git</a></td>
+          </tr>
+          <tr>
+            <td class="project-name-cell">Task Tracker Plus</td>
+            <td><span class="badge badge-backend">Backend</span></td>
+            <td class="tech-stack-cell">Golang, Postgres, REST API</td>
+            <td class="metric-cell">REST backend with priority &amp; deadline management</td>
+            <td><a href="https://github.com/adhitamaw/task-tracker-plus-go" class="table-link" target="_blank"><i class="fab fa-github"></i> Git</a></td>
+          </tr>
+          <tr>
+            <td class="project-name-cell">AI Model App</td>
+            <td><span class="badge badge-backend">Backend</span></td>
+            <td class="tech-stack-cell">Golang, HuggingFace, JWT</td>
+            <td class="metric-cell">REST API integrating translation &amp; chat models</td>
+            <td><a href="https://github.com/adhitamaw/ai-model-app-using-golang" class="table-link" target="_blank"><i class="fab fa-github"></i> Git</a></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <div class="notable-projects-grid">
-      <!-- Mini project 1 -->
-      <div class="project-card reveal-scale" style="transition-delay: 0.1s">
-        <div class="project-card-body">
-          <div class="project-card-header-flex">
-            <h3 class="project-card-title">SPPD Mobile</h3>
-            <span class="project-card-meta">BP Batam • 2024</span>
-          </div>
-          <p class="project-card-desc">Flutter-based travel order management with PHP/MySQL backend for business trip administration.</p>
-          <div class="project-card-tags">
-            <span class="project-card-tag">Flutter</span>
-            <span class="project-card-tag">PHP</span>
-            <span class="project-card-tag">MySQL</span>
-          </div>
-          <div class="project-card-links">
-            <a href="https://github.com/adhitamaw/sppd" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <div id="notable-projects-visual-section">
+      <div class="reveal notable-projects-header">
+        <h3 class="notable-projects-title">Notable projects</h3>
+        <p class="notable-projects-subtitle">Other independent work, utility apps, and academic contributions.</p>
+      </div>
+      <div class="notable-projects-grid">
+        <div class="project-card reveal-scale" style="transition-delay: 0.1s">
+          <div class="project-card-body">
+            <div class="project-card-header-flex">
+              <h3 class="project-card-title">SPPD Mobile</h3>
+              <span class="project-card-meta">BP Batam &bull; 2024</span>
+            </div>
+            <p class="project-card-desc">Flutter-based travel order management with PHP/MySQL backend.</p>
+            <div class="project-card-tags">
+              <span class="project-card-tag">Flutter</span>
+              <span class="project-card-tag">PHP</span>
+              <span class="project-card-tag">MySQL</span>
+            </div>
+            <div class="project-card-links">
+              <a href="https://github.com/adhitamaw/sppd" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- Mini project 2 -->
-      <div class="project-card reveal-scale" style="transition-delay: 0.2s">
-        <div class="project-card-body">
-          <div class="project-card-header-flex">
-            <h3 class="project-card-title">Task Tracker Plus</h3>
-            <span class="project-card-meta">MSIB 6 • 2024</span>
-          </div>
-          <p class="project-card-desc">Go-based task management with category management, priority levels, and deadline tracking using RESTful API.</p>
-          <div class="project-card-tags">
-            <span class="project-card-tag">Golang</span>
-            <span class="project-card-tag">PostgreSQL</span>
-            <span class="project-card-tag">REST API</span>
-          </div>
-          <div class="project-card-links">
-            <a href="https://github.com/adhitamaw/task-tracker-plus-go" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <div class="project-card reveal-scale" style="transition-delay: 0.2s">
+          <div class="project-card-body">
+            <div class="project-card-header-flex">
+              <h3 class="project-card-title">Task Tracker Plus</h3>
+              <span class="project-card-meta">MSIB 6 &bull; 2024</span>
+            </div>
+            <p class="project-card-desc">Go-based task management with category management and deadline tracking.</p>
+            <div class="project-card-tags">
+              <span class="project-card-tag">Golang</span>
+              <span class="project-card-tag">PostgreSQL</span>
+              <span class="project-card-tag">REST API</span>
+            </div>
+            <div class="project-card-links">
+              <a href="https://github.com/adhitamaw/task-tracker-plus-go" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- Mini project 3 -->
-      <div class="project-card reveal-scale" style="transition-delay: 0.3s">
-        <div class="project-card-body">
-          <div class="project-card-header-flex">
-            <h3 class="project-card-title">AI Model App</h3>
-            <span class="project-card-meta">MSIB 6 • 2024</span>
-          </div>
-          <p class="project-card-desc">Go web app integrating Hugging Face AI models for translation and chat with JWT authentication.</p>
-          <div class="project-card-tags">
-            <span class="project-card-tag">Golang</span>
-            <span class="project-card-tag">HuggingFace</span>
-            <span class="project-card-tag">JWT</span>
-          </div>
-          <div class="project-card-links">
-            <a href="https://github.com/adhitamaw/ai-model-app-using-golang" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <div class="project-card reveal-scale" style="transition-delay: 0.3s">
+          <div class="project-card-body">
+            <div class="project-card-header-flex">
+              <h3 class="project-card-title">AI Model App</h3>
+              <span class="project-card-meta">MSIB 6 &bull; 2024</span>
+            </div>
+            <p class="project-card-desc">Go web app integrating Hugging Face AI models with JWT auth.</p>
+            <div class="project-card-tags">
+              <span class="project-card-tag">Golang</span>
+              <span class="project-card-tag">HuggingFace</span>
+              <span class="project-card-tag">JWT</span>
+            </div>
+            <div class="project-card-links">
+              <a href="https://github.com/adhitamaw/ai-model-app-using-golang" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
         </div>
       </div>
@@ -274,38 +429,28 @@
     <div class="reveal">
       <p class="section-tag">Experience</p>
       <h2 class="section-title">Career timeline</h2>
-      <p class="section-sub">Internships and programs where I built real-world skills.</p>
     </div>
-
     <div class="timeline">
       <div class="timeline-item reveal-left">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">October 2025 — December 2025</div>
+        <div class="timeline-date">October 2025 &mdash; December 2025</div>
         <h3 class="timeline-role">Data Analyst Fleet Management</h3>
-        <div class="timeline-company">PT. Toyota-Astra Motor — Jakarta</div>
-        <p class="timeline-desc">
-          Developed and maintained Sales & Aftersales dashboards using Power BI. Optimized dashboard performance from ~45s to 10s loading time. Designed Python-based data cleaning pipeline for automated preprocessing.
-        </p>
+        <div class="timeline-company">PT. Toyota-Astra Motor &mdash; Jakarta</div>
+        <p class="timeline-desc">Developed Sales &amp; Aftersales dashboards in Power BI. Reduced dashboard load from 45s to 10s. Built Python ETL pipeline.</p>
       </div>
-
       <div class="timeline-item reveal-left" style="transition-delay: 0.1s">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">June 2024 — August 2024</div>
+        <div class="timeline-date">June 2024 &mdash; August 2024</div>
         <h3 class="timeline-role">Backend Developer (Internship)</h3>
-        <div class="timeline-company">BP Batam — Batam</div>
-        <p class="timeline-desc">
-          Developed RESTful APIs using PHP for the SPPD Mobile system. Designed MySQL database with integrated relational tables. Implemented API security — parameterized queries, CORS, structured JSON responses.
-        </p>
+        <div class="timeline-company">BP Batam &mdash; Batam</div>
+        <p class="timeline-desc">Built RESTful APIs with PHP for SPPD Mobile. Designed MySQL database with parameterized queries &amp; CORS security.</p>
       </div>
-
       <div class="timeline-item reveal-left" style="transition-delay: 0.2s">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">February 2024 — June 2024</div>
-        <h3 class="timeline-role">AI Integration Student — MSIB 6</h3>
-        <div class="timeline-company">Ruangguru (Kampus Merdeka) — Remote</div>
-        <p class="timeline-desc">
-          Built RESTful backend services using Golang with clean architecture. Designed optimized PostgreSQL database. Implemented JWT authentication and middleware.
-        </p>
+        <div class="timeline-date">February 2024 &mdash; June 2024</div>
+        <h3 class="timeline-role">AI Integration Student &mdash; MSIB 6</h3>
+        <div class="timeline-company">Ruangguru (Kampus Merdeka) &mdash; Remote</div>
+        <p class="timeline-desc">Developed RESTful backend services in Golang with clean architecture. Designed PostgreSQL database and JWT authentication.</p>
       </div>
     </div>
   </section>
@@ -314,7 +459,6 @@
   <section id="education" class="reveal">
     <p class="section-tag">Education</p>
     <h2 class="section-title">Academic background</h2>
-
     <div class="education-container">
       <div class="education-flex">
         <div class="education-icon-wrapper">
@@ -324,8 +468,8 @@
           <h3>Bachelor of Informatics</h3>
           <p class="education-school">Telkom University, Bandung</p>
           <div class="education-meta">
-            <span>2021 — 2025</span>
-            <span class="education-gpa">GPA: 3.34/4.00</span念>
+            <span>2021 &mdash; 2025</span>
+            <span class="education-gpa">GPA: 3.34/4.00</span>
           </div>
           <div class="education-tags">
             <span class="project-card-tag">Data Visualization</span>
@@ -345,67 +489,49 @@
   <section id="certifications" class="reveal">
     <p class="section-tag">Certifications</p>
     <h2 class="section-title">Professional Credentials</h2>
-
     <div class="certifications-grid">
       <div class="cert-card reveal-scale">
-        <div class="cert-icon">
-          <i class="fas fa-database"></i>
-        </div>
+        <div class="cert-icon"><i class="fas fa-database"></i></div>
         <div class="cert-info">
           <h3 class="cert-title">Becoming Data Engineer</h3>
           <p class="cert-org">Dunia Coding</p>
           <p class="cert-date">2026</p>
         </div>
       </div>
-
       <div class="cert-card reveal-scale" style="transition-delay: 0.1s">
-        <div class="cert-icon">
-          <i class="fas fa-chart-line"></i>
-        </div>
+        <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
         <div class="cert-info">
-          <h3 class="cert-title">Data Analytics and Visualization Bootcamp</h3>
+          <h3 class="cert-title">Data Analytics &amp; Visualization Bootcamp</h3>
           <p class="cert-org">Dsarea</p>
           <p class="cert-date">2026</p>
         </div>
       </div>
-
       <div class="cert-card reveal-scale" style="transition-delay: 0.2s">
-        <div class="cert-icon">
-          <i class="fas fa-chart-pie"></i>
-        </div>
+        <div class="cert-icon"><i class="fas fa-chart-pie"></i></div>
         <div class="cert-info">
           <h3 class="cert-title">Introduction to Data Analytics</h3>
           <p class="cert-org">RevoU</p>
           <p class="cert-date">2026</p>
         </div>
       </div>
-
       <div class="cert-card reveal-scale" style="transition-delay: 0.3s">
-        <div class="cert-icon">
-          <i class="fas fa-newspaper"></i>
-        </div>
+        <div class="cert-icon"><i class="fas fa-newspaper"></i></div>
         <div class="cert-info">
           <h3 class="cert-title">IEEE ICSECS</h3>
           <p class="cert-org">Published Author</p>
           <p class="cert-date">2025</p>
         </div>
       </div>
-
       <div class="cert-card reveal-scale" style="transition-delay: 0.4s">
-        <div class="cert-icon">
-          <i class="fab fa-laravel"></i>
-        </div>
+        <div class="cert-icon"><i class="fab fa-laravel"></i></div>
         <div class="cert-info">
           <h3 class="cert-title">Laravel 11 Web Developer</h3>
           <p class="cert-org">Sanbercode</p>
           <p class="cert-date">2025</p>
         </div>
       </div>
-
       <div class="cert-card reveal-scale" style="transition-delay: 0.5s">
-        <div class="cert-icon">
-          <i class="fas fa-robot"></i>
-        </div>
+        <div class="cert-icon"><i class="fas fa-robot"></i></div>
         <div class="cert-info">
           <h3 class="cert-title">MSIB 6</h3>
           <p class="cert-org">AI Integration</p>
@@ -419,39 +545,24 @@
   <section id="contact">
     <div class="reveal">
       <p class="section-tag">Contact</p>
-      <h2 class="section-title">Let's work together</h2>
-      <p class="section-sub">
-        Have a project in mind or just want to say hi? Reach out!
-      </p>
+      <h2 class="section-title">Let&rsquo;s work together</h2>
+      <p class="section-sub">Have a project in mind or just want to say hi? Reach out!</p>
     </div>
-
     <div class="contact-grid">
       <div class="contact-info reveal-left">
         <h3>Get in touch</h3>
-        <p>
-          I'm always open to new opportunities, collaborations, and interesting projects.
-          Based in Jakarta, Indonesia — available for remote or on-site work.
-        </p>
-
+        <p>Based in Jakarta, Indonesia &mdash; available for remote or on-site opportunities.</p>
         <div style="margin-bottom:2rem;">
           <p style="color:var(--text-secondary);margin-bottom:0.3rem;"><i class="fas fa-envelope" style="color:var(--primary);width:24px;"></i> adhit1312@gmail.com</p>
           <p style="color:var(--text-secondary);"><i class="fas fa-phone" style="color:var(--primary);width:24px;"></i> +62 812-9058-6078</p>
         </div>
-
         <div class="contact-socials">
-          <a href="https://github.com/adhitamaw" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/adhitama-wichaksono-15b56b199/" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="mailto:adhit1312@gmail.com" target="_blank" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
+          <a href="https://github.com/adhitamaw" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/adhitama-wichaksono-15b56b199/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:adhit1312@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
-
-      <form class="contact-form">
+      <form class="contact-form reveal-right">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" placeholder="Your name" />
@@ -480,11 +591,9 @@
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </div>
-    <p>&copy; 2026 Adhitama Wichaksono — All Rights Reserved</p>
+    <p>&copy; 2026 Adhitama Wichaksono &mdash; All Rights Reserved</p>
   </footer>
 
-  <!-- Scripts -->
   <script src="main.js"></script>
-
 </body>
 </html>
